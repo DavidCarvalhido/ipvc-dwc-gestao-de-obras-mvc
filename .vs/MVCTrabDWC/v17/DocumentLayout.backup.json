@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\movimentos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\movimentos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\controllers\\movimentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\controllers\\movimentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\shared\\_dashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\shared\\_dashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "_DashboardLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Shared\\_DashboardLayout.cshtml",
               "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Shared\\_DashboardLayout.cshtml",
               "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Shared\\_DashboardLayout.cshtml",
               "RelativeToolTip": "MVCTrabDWC\\Views\\Shared\\_DashboardLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAApwGIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-30T14:55:18.743Z",
+              "WhenOpened": "2026-01-31T20:49:57.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Movimentos\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Movimentos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Movimentos\\Index.cshtml",
+              "RelativeToolTip": "MVCTrabDWC\\Views\\Movimentos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-31T20:46:01.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovimentosController.cs",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Controllers\\MovimentosController.cs",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Controllers\\MovimentosController.cs",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Controllers\\MovimentosController.cs",
+              "RelativeToolTip": "MVCTrabDWC\\Controllers\\MovimentosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T20:40:02.758Z",
               "EditorCaption": ""
             }
           ]

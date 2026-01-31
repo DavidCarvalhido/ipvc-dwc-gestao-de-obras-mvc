@@ -1,0 +1,44 @@
+﻿@model IEnumerable<MVCTrabDWC.Models.RegistoMaterial>
+
+@{
+    ViewData["Title"] = "Movimentos de Stock";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="container-lg px-4">
+    <h1 class="mb-4">Movimentos de Stock</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Obra</th>
+                        <th>Cliente</th>
+                        <th>Material</th>
+                        <th>Operação</th>
+                        <th>Quantidade</th>
+                        <th>Data da Operação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Obra?.NomeObra</td>
+                            <td>@item.Obra?.Cliente?.Nome</td>
+                            <td>@item.Material?.Nome</td>
+                            <td>
+                                <span class="badge @(item.Operacao == OperacaoStock.REMOVE ? "bg-danger" : "bg-success")">
+                                    @item.Operacao
+                                </span>
+                            </td>
+                            <td>@item.Quantidade</td>
+                            <td>@item.DataHora.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
