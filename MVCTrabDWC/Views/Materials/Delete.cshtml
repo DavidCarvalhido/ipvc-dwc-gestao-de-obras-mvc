@@ -1,0 +1,33 @@
+﻿@model MVCTrabDWC.Models.Material
+
+@{
+    ViewData["Title"] = "Remover Material";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="container-lg px-4">
+
+    <h1>Remover Material</h1>
+
+    <div class="alert alert-warning">
+        Tem a certeza que pretende remover este material?
+    </div>
+
+    <dl class="row">
+        <dt class="col-sm-3">Nome</dt>
+        <dd class="col-sm-9">@Model.Nome</dd>
+
+        <dt class="col-sm-3">Descrição</dt>
+        <dd class="col-sm-9">@Model.Descricao</dd>
+
+        <dt class="col-sm-3">Stock Disponível</dt>
+        <dd class="col-sm-9">@Model.StockDisponivel</dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button class="btn btn-danger">Remover</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+
+</div>

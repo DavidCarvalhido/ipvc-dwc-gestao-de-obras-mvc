@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = "DWC Construções, Lda.";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="container-lg px-4">
+
+    <h1 class="mb-4">Dashboard</h1>
+
+    <!-- Cards -->
+    <div class="row mb-4">
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-primary">
+                <div class="card-body pb-0">
+                    <h4 class="text-white">150</h4>
+                    <p>Novos utilizadores</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-info">
+                <div class="card-body pb-0">
+                    <h4 class="text-white">320</h4>
+                    <p>Pedidos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-warning">
+                <div class="card-body pb-0">
+                    <h4 class="text-white">87%</h4>
+                    <p>Taxa conversão</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-danger">
+                <div class="card-body pb-0">
+                    <h4 class="text-white">12</h4>
+                    <p>Alertas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHART -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <strong>Vendas (últimos meses)</strong>
+        </div>
+        <div class="card-body">
+            <canvas id="salesChart"></canvas>
+        </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="card">
+        <div class="card-header">
+            <strong>Últimos Registos</strong>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Data</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td><td>Ana Silva</td><td>ana@example.com</td><td>2025-01-09</td>
+                </tr>
+                <tr>
+                    <td>2</td><td>Marco Lima</td><td>marco@example.com</td><td>2025-01-12</td>
+                </tr>
+                <tr>
+                    <td>3</td><td>Beatriz Costa</td><td>beatriz@example.com</td><td>2025-02-02</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+
+    <script>
+        // Chart.js demo chart
+        const ctx = document.getElementById('salesChart');
+
+        const data = {
+            labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+            datasets: [{
+                label: 'Vendas',
+                backgroundColor: coreui.Utils.getStyle('--cui-primary'),
+                borderColor: coreui.Utils.getStyle('--cui-primary'),
+                data: [120, 150, 180, 90, 200, 240],
+                fill: false
+            }]
+        };
+
+        new coreui.Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+
+}

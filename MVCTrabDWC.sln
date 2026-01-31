@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCTrabDWC", "MVCTrabDWC\MVCTrabDWC.csproj", "{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC54D82D-9313-49AA-9CB6-9CBC052EC3A9}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,157 @@
+﻿@model MVCTrabDWC.Models.Obra
+
+@{
+    ViewData["Title"] = "Detalhes da Obra";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="container-lg px-4">
+    <h1>@Model.NomeObra</h1>
+
+    <dl class="row mb-4">
+        <dt class="col-sm-3">Cliente</dt>
+        <dd class="col-sm-9">@Model.Cliente?.Nome</dd>
+        <dt class="col-sm-3">Descrição</dt>
+        <dd class="col-sm-9">@Model.DescricaoObra</dd>
+        <dt class="col-sm-3">Morada</dt>
+        <dd class="col-sm-9">@Model.Morada</dd>
+        <dt class="col-sm-3">Latitude</dt>
+        <dd class="col-sm-9">@Model.Latitude</dd>
+        <dt class="col-sm-3">Longitude</dt>
+        <dd class="col-sm-9">@Model.Longitude</dd>
+    </dl>
+
+    <!-- TABS -->
+    <ul class="nav nav-tabs mb-3" id="obraTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="dados-tab" data-coreui-toggle="tab" data-coreui-target="#dados" type="button" role="tab">Dados Gerais</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="material-tab" data-coreui-toggle="tab" data-coreui-target="#material" type="button" role="tab">Registo de Material</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="maoobra-tab" data-coreui-toggle="tab" data-coreui-target="#maoobra" type="button" role="tab">Mão de Obra</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pagamentos-tab" data-coreui-toggle="tab" data-coreui-target="#pagamentos" type="button" role="tab">Pagamentos</button>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="dados" role="tabpanel">
+            <p>Informação extra / notas da obra.</p>
+        </div>
+
+        <div class="tab-pane fade" id="material" role="tabpanel">
+            @{
+                // preparar ViewBag.Materiais para o partial
+                ViewBag.Materiais = Context.RequestServices
+                .GetService(typeof(MVCTrabDWC.Data.AppDbContext)) as MVCTrabDWC.Data.AppDbContext;
+            }
+
+            @* Listagem dos registos de material da obra *@
+            <div class="mb-3">
+                <h5>Movimentos de Material</h5>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Operação</th>
+                            <th>Quantidade</th>
+                            <th>Data/Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var rm in Model.RegistosMaterial.OrderByDescending(r => r.DataHora))
+                        {
+                            <tr>
+                                <td>@rm.Material?.Nome</td>
+                                <td>@rm.Operacao</td>
+                                <td>@rm.Quantidade</td>
+                                <td>@rm.DataHora.ToLocalTime().ToString("g")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            @* Mostrar partial de registo de material *@
+            @{
+                // Carregar lista de materiais no ViewBag
+                var db = Context.RequestServices.GetService(typeof(MVCTrabDWC.Data.AppDbContext)) as MVCTrabDWC.Data.AppDbContext;
+                ViewBag.Materiais = db.Materiais.OrderBy(m => m.Nome).ToList();
+                await Html.RenderPartialAsync("_RegistoMaterial", new MVCTrabDWC.Models.RegistoMaterial { ObraId = Model.Id });
+            }
+        </div>
+
+        <div class="tab-pane fade" id="maoobra" role="tabpanel">
+            <div class="mb-3">
+                <h5>Registos de Mão de Obra</h5>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Horas</th>
+                            <th>Data/Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var rm in Model.RegistosMaoObra.OrderByDescending(r => r.DataHora))
+                        {
+                            <tr>
+                                <td>@rm.NomePessoa</td>
+                                <td>@rm.HorasTrabalhadas</td>
+                                <td>@rm.DataHora.ToLocalTime().ToString("g")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            @{
+                await Html.RenderPartialAsync("_RegistoPagamentos", new MVCTrabDWC.Models.RegistoPagamento { ObraId = Model.Id });
+            }
+        </div>
+
+        <div class="tab-pane fade" id="pagamentos" role="tabpanel">
+            <div class="mb-3">
+                <h5>Registos de Pagamentos</h5>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Valor</th>
+                            <th>Data/Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var rp in Model.RegistosPagamento.OrderByDescending(r => r.DataHora))
+                        {
+                            <tr>
+                                <td>@rp.NomePessoa</td>
+                                <td>@rp.Valor.ToString("C")</td>
+                                <td>@rp.DataHora.ToLocalTime().ToString("g")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            @{
+                await Html.RenderPartialAsync("_RegistoPagamentos", new MVCTrabDWC.Models.RegistoPagamento { ObraId = Model.Id });
+            }
+        </div>
+    </div>
+
+    <a class="btn btn-secondary mt-3" asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    <script>
+        // Inicializar tabs CoreUI caso necessário
+        (function () {
+            const triggerEl = document.querySelectorAll('#obraTabs button');
+            triggerEl.forEach(el => el.addEventListener('shown.coreui.tab', function (event) {
+                // event.target is the newly activated tab
+            }));
+        })();
+    </script>
+}

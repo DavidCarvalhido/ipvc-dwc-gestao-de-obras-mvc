@@ -1,0 +1,39 @@
+﻿@model MVCTrabDWC.Models.RegistoMaterial
+
+@{
+    // ViewBag.Materiais deve conter lista de materiais (IEnumerable<Material>)
+}
+
+<div class="card mb-3">
+    <div class="card-header">Registo de Material</div>
+    <div class="card-body">
+        <form asp-controller="RegistosMaterial" asp-action="Create" method="post" class="row g-3">
+            <input type="hidden" name="obraId" value="@Model.ObraId" />
+
+            <div class="col-md-6">
+                <label class="form-label">Material</label>
+                <select name="materialId" class="form-select" required>
+                    <option value="">-- Selecionar --</option>
+                    @foreach (var m in ViewBag.Materiais as IEnumerable<MVCTrabDWC.Models.Material>)
+                    {
+                        <option value="@m.Id">@m.Nome (@m.StockDisponivel)</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">Quantidade</label>
+                <input type="number" name="quantidade" class="form-control" min="1" required />
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">Observações (opcional)</label>
+                <input type="text" name="observacoes" class="form-control" />
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Registar Material (REMOVE)</button>
+            </div>
+        </form>
+    </div>
+</div>

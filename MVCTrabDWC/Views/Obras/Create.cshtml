@@ -1,0 +1,62 @@
+﻿@model MVCTrabDWC.Models.Obra
+
+@{
+    ViewData["Title"] = "Nova Obra";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="container-lg px-4">
+    <h1>Nova Obra</h1>
+
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label asp-for="NomeObra" class="form-label"></label>
+            <input asp-for="NomeObra" class="form-control" />
+            <span asp-validation-for="NomeObra" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DescricaoObra" class="form-label"></label>
+            <textarea asp-for="DescricaoObra" class="form-control"></textarea>
+            <span asp-validation-for="DescricaoObra" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Cliente</label>
+            <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.Clientes"></select>
+            <span asp-validation-for="ClienteId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Morada" class="form-label"></label>
+            <input asp-for="Morada" class="form-control" />
+            <span asp-validation-for="Morada" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Latitude" class="form-label"></label>
+            <input asp-for="Latitude" class="form-control" />
+            <span asp-validation-for="Latitude" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Longitude" class="form-label"></label>
+            <input asp-for="Longitude" class="form-control" />
+            <span asp-validation-for="Longitude" class="text-danger"></span>
+        </div>
+
+        <div class="form-check mb-3">
+            <input asp-for="Ativa" class="form-check-input" />
+            <label asp-for="Ativa" class="form-check-label"></label>
+        </div>
+
+        <button class="btn btn-primary">Guardar</button>
+        <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
