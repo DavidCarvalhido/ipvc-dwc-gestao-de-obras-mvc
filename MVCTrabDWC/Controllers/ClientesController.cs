@@ -61,13 +61,32 @@ namespace MVCTrabDWC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Nome,NIF,Morada,Email,Telefone")] Cliente cliente)
         {
-            if (ModelState.IsValid)
+            // Validação manual do NIF único
+            bool nifExiste = await _context.Clientes
+                .AnyAsync(c => c.NIF == cliente.NIF);
+
+            if (nifExiste)
+            {
+                ModelState.AddModelError("NIF", "Já existe um cliente com este NIF.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return View(cliente);
+            }
+
+            try
             {
                 _context.Add(cliente);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(cliente);
+            catch (DbUpdateException)
+            {
+                // Fallback de segurança (não devia acontecer normalmente)
+                ModelState.AddModelError("", "Ocorreu um erro ao guardar o cliente.");
+                return View(cliente);
+            }
         }
 
         // GET: Clientes/Edit/5
@@ -93,6 +112,14 @@ namespace MVCTrabDWC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,NIF,Morada,Email,Telefone")] Cliente cliente)
         {
+            bool nifDuplicado = await _context.Clientes
+    .AnyAsync(c => c.NIF == cliente.NIF && c.Id != cliente.Id);
+
+            if (nifDuplicado)
+            {
+                ModelState.AddModelError("NIF", "Já existe outro cliente com este NIF.");
+            }
+
             if (id != cliente.Id)
             {
                 return NotFound();
@@ -151,7 +178,7 @@ namespace MVCTrabDWC.Controllers
 
             if (temObras)
             {
-                // Ãdiciona uma mensagem e volta à view Delete
+                // Adiciona uma mensagem e volta à view Delete
                 ModelState.AddModelError(string.Empty, "Não é possível remover um cliente que tem obras associadas.");
                 return View(cliente);
             }

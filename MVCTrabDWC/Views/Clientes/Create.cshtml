@@ -17,7 +17,7 @@
 
         <div class="mb-3">
             <label asp-for="NIF" class="form-label"></label>
-            <input asp-for="NIF" class="form-control" />
+            <input asp-for="NIF" class="form-control" maxlength="9" inputmode="numeric" pattern="\d{9}" />
             <span asp-validation-for="NIF" class="text-danger"></span>
         </div>
 
@@ -35,7 +35,7 @@
 
         <div class="mb-3">
             <label asp-for="Telefone" class="form-label"></label>
-            <input asp-for="Telefone" class="form-control" />
+            <input asp-for="Telefone" class="form-control" maxlength="9" inputmode="numeric" pattern="\d{9}" />
             <span asp-validation-for="Telefone" class="text-danger"></span>
         </div>
 
