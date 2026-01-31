@@ -1330,3 +1330,4 @@ C:\Users\David\source\repos\MVCTrabDWC\MVCTrabDWC\obj\Debug\net9.0\refint\MVCTra
 C:\Users\David\source\repos\MVCTrabDWC\MVCTrabDWC\obj\Debug\net9.0\MVCTrabDWC.pdb
 C:\Users\David\source\repos\MVCTrabDWC\MVCTrabDWC\obj\Debug\net9.0\MVCTrabDWC.genruntimeconfig.cache
 C:\Users\David\source\repos\MVCTrabDWC\MVCTrabDWC\obj\Debug\net9.0\ref\MVCTrabDWC.dll
+C:\Users\David\source\repos\MVCTrabDWC\MVCTrabDWC\obj\Debug\net9.0\MVCTrabDWC.sourcelink.json
