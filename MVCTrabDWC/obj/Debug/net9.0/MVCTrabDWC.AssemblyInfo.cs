@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVCTrabDWC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd8c54d4211f37e1fbcdc0c8c0947ab770e12f13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+999a626aca88a129048430a339cd22c761c999cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVCTrabDWC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVCTrabDWC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
