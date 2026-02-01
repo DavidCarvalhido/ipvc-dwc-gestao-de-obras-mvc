@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\obras\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\obras\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\shared\\_dashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\shared\\_dashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\materials\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\materials\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\materials\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\materials\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\obras\\_registomaterial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\obras\\_registomaterial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\obras\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\obras\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\obras\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\obras\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|c:\\users\\david\\source\\repos\\mvctrabdwc\\mvctrabdwc\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CCE54B0-02AF-445B-B34C-D2D0321C7AAD}|MVCTrabDWC\\MVCTrabDWC.csproj|solutionrelative:mvctrabdwc\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "MVCTrabDWC\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAACIAAAAAAAAAAAAmwDkAAAA0AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Materials\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Materials\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Materials\\Edit.cshtml",
+              "RelativeToolTip": "MVCTrabDWC\\Views\\Materials\\Edit.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-01T12:28:23.377Z",
+              "WhenOpened": "2026-02-01T21:01:13.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_DashboardLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Shared\\_DashboardLayout.cshtml",
-              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Shared\\_DashboardLayout.cshtml",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Shared\\_DashboardLayout.cshtml",
-              "RelativeToolTip": "MVCTrabDWC\\Views\\Shared\\_DashboardLayout.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAswEQAAABHAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Obras\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Obras\\Details.cshtml",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Obras\\Details.cshtml*",
+              "RelativeToolTip": "MVCTrabDWC\\Views\\Obras\\Details.cshtml*",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAswIoAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-01T11:07:05.93Z",
+              "WhenOpened": "2026-02-01T20:58:12.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_RegistoMaterial.cshtml",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Obras\\_RegistoMaterial.cshtml",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Obras\\_RegistoMaterial.cshtml",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Obras\\_RegistoMaterial.cshtml",
+              "RelativeToolTip": "MVCTrabDWC\\Views\\Obras\\_RegistoMaterial.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-01T20:56:53.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Obras\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Obras\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Obras\\Edit.cshtml",
+              "RelativeToolTip": "MVCTrabDWC\\Views\\Obras\\Edit.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-01T20:56:05.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Obras\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Obras\\Create.cshtml",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Obras\\Create.cshtml",
+              "RelativeToolTip": "MVCTrabDWC\\Views\\Obras\\Create.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-01T20:55:30.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Materials\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Materials\\Create.cshtml",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Materials\\Create.cshtml",
+              "RelativeToolTip": "MVCTrabDWC\\Views\\Materials\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-01T20:52:49.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCTrabDWC\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\MVCTrabDWC\\MVCTrabDWC\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "MVCTrabDWC\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-01T20:51:33.162Z",
               "EditorCaption": ""
             }
           ]
