@@ -133,14 +133,14 @@
                                 <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
                                     <svg class="icon icon-lg me-3">
                                         <use xlink:href="/vendors/icons/free.svg#cil-sun"></use>
-                                    </svg>Light
+                                    </svg>Claro
                                 </button>
                             </li>
                             <li>
                                 <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
                                     <svg class="icon icon-lg me-3">
                                         <use xlink:href="/vendors/icons/free.svg#cil-moon"></use>
-                                    </svg>Dark
+                                    </svg>Escuro
                                 </button>
                             </li>
                             <li>
@@ -157,8 +157,21 @@
                         <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
                     </li>
                     <li class="nav-item dropdown">
+                        
+                        <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
+                            <li>
+                                <form asp-controller="Account" asp-action="Logout" method="post" class="dropdown-item p-0 m-0">
+                                    <button type="submit" class="btn btn-link dropdown-item d-flex align-items-center text-start w-100">
+                                        <svg class="icon me-3">
+                                            <use xlink:href="/vendors/icons/free.svg#cil-account-logout"></use>
+                                        </svg>
+                                        Sair
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
                         <a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <div class="avatar avatar-md"><img class="avatar-img" src="~/assets/img/avatars/9.jpg" alt="user@email.com"></div>
+                            <div class="avatar avatar-md"><img class="avatar-img" src="~/assets/img/avatars/user_1.png" alt="user@email.com"></div>
                         </a>
                     </li>
                 </ul>
