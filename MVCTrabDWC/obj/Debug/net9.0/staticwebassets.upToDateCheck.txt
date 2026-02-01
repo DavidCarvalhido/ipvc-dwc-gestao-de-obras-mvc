@@ -980,15 +980,7 @@ wwwroot\assets\icons\x.svg
 wwwroot\assets\icons\yen.svg
 wwwroot\assets\icons\zoom-in.svg
 wwwroot\assets\icons\zoom-out.svg
-wwwroot\assets\img\avatars\1.jpg
-wwwroot\assets\img\avatars\2.jpg
-wwwroot\assets\img\avatars\3.jpg
-wwwroot\assets\img\avatars\4.jpg
-wwwroot\assets\img\avatars\5.jpg
-wwwroot\assets\img\avatars\6.jpg
-wwwroot\assets\img\avatars\7.jpg
-wwwroot\assets\img\avatars\8.jpg
-wwwroot\assets\img\avatars\9.jpg
+wwwroot\assets\img\avatars\user_1.png
 wwwroot\assets\img\background-pro-yellow.jpg
 wwwroot\assets\img\background-pro.jpg
 wwwroot\assets\img\components.webp

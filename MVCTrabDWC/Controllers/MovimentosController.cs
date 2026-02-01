@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVCTrabDWC.Data;
 
 namespace MVCTrabDWC.Controllers
 {
+    [Authorize]
     public class MovimentosController : Controller
     {
         private readonly AppDbContext _context;

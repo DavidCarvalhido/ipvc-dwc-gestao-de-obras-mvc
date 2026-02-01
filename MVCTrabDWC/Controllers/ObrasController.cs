@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVCTrabDWC.Data;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace GestaoObras.Controllers
 {
+    [Authorize]
     public class ObrasController : Controller
     {
         private readonly AppDbContext _context;
